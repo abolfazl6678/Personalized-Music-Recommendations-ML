@@ -3,14 +3,14 @@ Unsupervised machine learning project clustering Rolling Stones songs from Spoti
 
 ---
 
-## 📌 Project Overview  
+## Project Overview  
 This project applies **unsupervised machine learning** to cluster songs from Spotify's Rolling Stones albums. By combining **exploratory data analysis (EDA)**, **feature engineering**, and **clustering algorithms**, the goal is to uncover hidden patterns in song features and create **cohorts of similar songs**.  
 
 Such cohorts can be used to improve **music recommendation systems**, helping streaming platforms deliver **personalized content** and enhance user engagement.  
 
 ---
 
-## 🎯 Objectives  
+## Objectives  
 - Perform **data cleaning and preprocessing** on Spotify song dataset.  
 - Conduct **exploratory data analysis (EDA)** to uncover patterns.  
 - Engineer meaningful features for clustering.  
@@ -21,7 +21,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## 📂 Dataset  
+## Dataset  
 - Source: Spotify API (Rolling Stones albums dataset).  
 - Each track includes metadata and audio features such as:  
   - 🎶 **Acousticness, Danceability, Energy, Instrumentalness, Liveness, Loudness**  
@@ -31,7 +31,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## 🛠️ Methodology  
+## Methodology  
 
 1. **Data Inspection & Cleaning**  
    - Handle duplicates, missing values, and outliers.  
@@ -66,7 +66,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## 💼 Business Impact  
+## Business Impact  
 - Helps streaming services (e.g., Spotify, Apple Music) improve **user engagement**.  
 - Enables **personalized playlist generation**.  
 - Provides insights for **music marketing strategies**.  
@@ -94,7 +94,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## 🚀 Next Steps  
+## Next Steps  
 - Expand dataset to include more artists and genres.  
 - Test deep learning–based clustering (autoencoders).  
 - Integrate with a **recommendation system prototype**.  

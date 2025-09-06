@@ -1,10 +1,7 @@
 # Personalized-Music-Recommendations-ML
 Unsupervised machine learning project clustering Rolling Stones songs from Spotify to uncover patterns in music features and support recommendation systems.
 
-
-
-
-# 🎵 Spotify Song Clustering for Personalized Recommendations  
+---
 
 ## 📌 Project Overview  
 This project applies **unsupervised machine learning** to cluster songs from Spotify's Rolling Stones albums. By combining **exploratory data analysis (EDA)**, **feature engineering**, and **clustering algorithms**, the goal is to uncover hidden patterns in song features and create **cohorts of similar songs**.  
@@ -103,11 +100,15 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 - Integrate with a **recommendation system prototype**.  
 
 ---
+---
 
-## 👨‍💻 Author  
+## Author
+
 **Abolfazl Zolfaghari**  
-- 🎓 PhD in Industrial Engineering | 📊 Data Scientist in Progress  
-- 🌐 [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com)  
+Data Science Graduate — Caltech  
+[Email](ab.zolfaghari.abbasghaleh) | [GitHub](https://github.com/abolfazl6678)
+
+---
 
 ---
 

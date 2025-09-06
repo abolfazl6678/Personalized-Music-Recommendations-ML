@@ -105,10 +105,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 ## Author
 
 **Abolfazl Zolfaghari**  
-Data Science Graduate — Caltech  
 [Email](ab.zolfaghari.abbasghaleh) | [GitHub](https://github.com/abolfazl6678)
-
----
 
 ---
 

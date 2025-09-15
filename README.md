@@ -3,14 +3,14 @@ Unsupervised machine learning project clustering Rolling Stones songs from Spoti
 
 ---
 
-## Project Overview  
+## Project Overview ??? 
 This project applies **unsupervised machine learning** to cluster songs from Spotify's Rolling Stones albums. By combining **exploratory data analysis (EDA)**, **feature engineering**, and **clustering algorithms**, the goal is to uncover hidden patterns in song features and create **cohorts of similar songs**.  
 
 Such cohorts can be used to improve **music recommendation systems**, helping streaming platforms deliver **personalized content** and enhance user engagement.  
 
 ---
 
-## Objectives  
+## Objectives ????  
 - Perform **data cleaning and preprocessing** on Spotify song dataset.  
 - Conduct **exploratory data analysis (EDA)** to uncover patterns.  
 - Engineer meaningful features for clustering.  
@@ -21,17 +21,17 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## Dataset  
+## Dataset  ????
 - Source: Spotify API (Rolling Stones albums dataset).  
 - Each track includes metadata and audio features such as:  
-  - 🎶 **Acousticness, Danceability, Energy, Instrumentalness, Liveness, Loudness**  
-  - 🗣️ **Speechiness, Valence, Tempo**  
-  - 📊 **Popularity, Duration, Release Date, Album Info**  
+  - **Acousticness, Danceability, Energy, Instrumentalness, Liveness, Loudness**  
+  - **Speechiness, Valence, Tempo**  
+  - **Popularity, Duration, Release Date, Album Info**  
 - Each song has a unique **Spotify ID** and **URI**.  
 
 ---
 
-## Methodology  
+## Methodology  ???
 
 1. **Data Inspection & Cleaning**  
    - Handle duplicates, missing values, and outliers.  
@@ -58,7 +58,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## 📊 Expected Results  
+## Expected Results  ???
 - Songs grouped into **cohorts with similar acoustic and popularity profiles**.  
 - Identification of **albums with the highest density of popular songs**.  
 - Visualization of clusters in reduced feature space.  
@@ -66,7 +66,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## Business Impact  
+## Business Impact  ???
 - Helps streaming services (e.g., Spotify, Apple Music) improve **user engagement**.  
 - Enables **personalized playlist generation**.  
 - Provides insights for **music marketing strategies**.  
@@ -74,36 +74,51 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  ???
 - **Python**: Pandas, NumPy, Scikit-learn  
 - **Visualization**: Matplotlib, Seaborn, Plotly  
-- **Clustering**: K-Means, Hierarchical, DBSCAN  
-- **Dimensionality Reduction**: PCA, t-SNE  
+- **Clustering**: K-Means, Hierarchical, DBSCAN, Mean Shift, Gaussian Mixture Models (GMM)   
+- **Dimensionality Reduction**: PCA, t-SNE(t-distributed Stochastic Neighbor Embedding), UMAP(Uniform Manifold Approximation and Projection), ICA(Independent Component Analysis)
 - **Jupyter Notebook** for analysis  
 
 ---
  
-## 📁 Repository Structure  
+## Repository Structure  ???
 
-├── data/ # Dataset (Spotify songs)
-├── notebooks/ # Jupyter notebooks for EDA and clustering
-├── src/ # Python scripts for modular pipeline
-├── results/ # Cluster visualizations and reports
-└── README.md # Project documentation
+```
+Marketing-Campaign-Analysis-with-EDA-and-Hypothesis-Testing/
+├── data/
+│ ├── interim/
+│ │   ├── c.parquet
+│ │   └── d.parquet
+│ └── raw/
+│     ├── Data Dictionary-Creating cohorts of songs.xlsx
+│     └── rolling_stones_spotify.csv
+├── Jupyter_notebook_Scripts/
+│     ├── 01_Data_Cleaning_Preprocessing.ipynb
+│     ├── 02_Exploratory_Data_Analysis_EDA.ipynb
+│     ├── 03_Hypothesis Testing.ipynb 
+│     └── 04_Visualization & Insights.ipynb
+├── Output/
+│     ├── 01_Data_Cleaning_Preprocessing.docx
+│     ├── 02_Exploratory_Data_Analysis_EDA.docx
+│     ├── 03_Hypothesis Testing.docx 
+│     └── 04_Visualization & Insights.docx
+└── README.md
+
+```
 
 
 ---
 
-## Next Steps  
+## Next Steps  ????
 - Expand dataset to include more artists and genres.  
 - Test deep learning–based clustering (autoencoders).  
 - Integrate with a **recommendation system prototype**.  
 
 ---
----
 
 ## Author
-
 **Abolfazl Zolfaghari**  
 [Email](ab.zolfaghari.abbasghaleh) | [GitHub](https://github.com/abolfazl6678)
 

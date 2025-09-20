@@ -34,22 +34,23 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 ## Methodology  ???
 
 1. **Data Inspection & Cleaning**  
-   - Handle duplicates, missing values, and outliers.  
-   - Validate unique song IDs.  
+   - Handle duplicates, missing values, validate unique song IDs
+   - Visualize distribution of song features.
+   - Check for outliers and handle them.
+   - Remove significant outliers from the dataset and save the cleaned dataset
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Visualize distribution of song features.  
-   - Analyze popularity trends across albums and time.  
-   - Examine correlations between popularity and features.  
+2. **Exploratory Data Analysis (EDA) and Feature Engineering**  
+   - Recommend albums and songs based on popularity
+   - Examine correlations between song features, especially popularity.    
+   - Analyze popularity trends over time.
 
 3. **Feature Engineering & Dimensionality Reduction**  
    - Scale features for clustering.  
-   - Apply PCA/t-SNE for visualization and dimensionality reduction.  
+   - Apply PCA and t-SNE for dimensionality reduction and cluster visualization, respectively. 
 
 4. **Clustering Analysis**  
-   - Determine optimal number of clusters (Elbow method, Silhouette score).  
-   - Apply algorithms: **K-Means**, **Hierarchical Clustering**, **DBSCAN**.  
-   - Interpret and label song clusters.  
+   - Determine optimal number of clusters uisng Elbow method
+   - Apply clustering methods and compare their performance
 
 5. **Insights & Recommendations**  
    - Define cohorts based on musical attributes.  
@@ -87,23 +88,23 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ```
 Marketing-Campaign-Analysis-with-EDA-and-Hypothesis-Testing/
-├── data/
+├── Data/
 │ ├── interim/
-│ │   ├── c.parquet
-│ │   └── d.parquet
+│ │   ├── data_outliers_cleared.parquet
+│ │   └── df_reduced_dim.parquet
 │ └── raw/
 │     ├── Data Dictionary-Creating cohorts of songs.xlsx
 │     └── rolling_stones_spotify.csv
 ├── Jupyter_notebook_Scripts/
-│     ├── 01_Data_Cleaning_Preprocessing.ipynb
-│     ├── 02_Exploratory_Data_Analysis_EDA.ipynb
-│     ├── 03_Hypothesis Testing.ipynb 
-│     └── 04_Visualization & Insights.ipynb
+│     ├── 01_Data_Inspection_Cleaning.ipynb
+│     ├── 02_Exploratory_Data Analysis_(EDA)_Feature_Engineering.ipynb
+│     ├── 03_Feature_Engineering_Dimensionality_Reduction.ipynb 
+│     └── 04_Clustering_Analysis.ipynb
 ├── Output/
-│     ├── 01_Data_Cleaning_Preprocessing.docx
-│     ├── 02_Exploratory_Data_Analysis_EDA.docx
-│     ├── 03_Hypothesis Testing.docx 
-│     └── 04_Visualization & Insights.docx
+│     ├── 01_.docx
+│     ├── 02_.docx
+│     ├── 03_.docx 
+│     └── 04_.docx
 └── README.md
 
 ```

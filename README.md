@@ -116,7 +116,7 @@ Marketing-Campaign-Analysis-with-EDA-and-Hypothesis-Testing/
 ```
 ---
 
-## How to Run the project?
+## Steps to Run the Project
 1. Go to `Jupyter_notebook_Scripts` folder.
 2. Run all scripts one by one according to numbers.
 3. Output of the notebooks can be check in `Output` folder.
@@ -125,7 +125,7 @@ Marketing-Campaign-Analysis-with-EDA-and-Hypothesis-Testing/
 
 ---
 
-## Next Steps
+## Future Improvement Project
 - Expand dataset to include more artists and genres.  
 - Test deep learning–based clustering (autoencoders).  
 - Integrate with a **recommendation system prototype**.

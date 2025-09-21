@@ -3,25 +3,25 @@ Unsupervised machine learning project clustering Rolling Stones songs from Spoti
 
 ---
 
-## Project Overview ??? 
+## Project Overview
 This project applies **unsupervised machine learning** to cluster songs from Spotify's Rolling Stones albums. By combining **exploratory data analysis (EDA)**, **feature engineering**, and **clustering algorithms**, the goal is to uncover hidden patterns in song features and create **cohorts of similar songs**.  
 
 Such cohorts can be used to improve **music recommendation systems**, helping streaming platforms deliver **personalized content** and enhance user engagement.  
 
 ---
 
-## Objectives ????  
+## Objectives
 - Perform **data cleaning and preprocessing** on Spotify song dataset.  
 - Conduct **exploratory data analysis (EDA)** to uncover patterns.  
 - Engineer meaningful features for clustering.  
 - Apply **dimensionality reduction techniques** (e.g., PCA, t-SNE) for visualization.  
-- Build **clustering models** (K-Means, Hierarchical, DBSCAN).  
+- Build **clustering models** (K-Means, Hierarchical, GMM).  
 - Define **song cohorts** and analyze their characteristics.  
 - Provide insights for **recommendation systems**.  
 
 ---
 
-## Dataset  ????
+## Dataset
 - Source: Spotify API (Rolling Stones albums dataset).  
 - Each track includes metadata and audio features such as:  
   - **Acousticness, Danceability, Energy, Instrumentalness, Liveness, Loudness**  
@@ -31,7 +31,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## Methodology  ???
+## Methodology
 
 1. **Data Inspection & Cleaning**  
    - Handle duplicates, missing values, validate unique song IDs
@@ -46,28 +46,22 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 3. **Feature Engineering & Dimensionality Reduction**  
    - Scale features for clustering.  
-   - Apply PCA and t-SNE for dimensionality reduction and cluster visualization, respectively. 
+   - Dimension reduction and visualization. 
 
 4. **Clustering Analysis**  
    - Determine optimal number of clusters uisng Elbow method
    - Apply clustering methods and compare their performance
-
-5. **Insights & Recommendations**  
-   - Define cohorts based on musical attributes.  
-   - Identify which albums/songs belong to high-popularity clusters.  
-   - Provide implications for recommendation systems.  
-
+   - Dataset split based on clustering results
 ---
 
-## Expected Results  ???
-- Songs grouped into **cohorts with similar acoustic and popularity profiles**.  
+## Expected Results
+- Songs grouped into **cohorts with similar popularity profiles**.  
 - Identification of **albums with the highest density of popular songs**.  
-- Visualization of clusters in reduced feature space.  
-- Actionable insights to **enhance personalized music recommendations**.  
+- Visualization of clusters in reduced feature space.
 
 ---
 
-## Business Impact  ???
+## Business Impact
 - Helps streaming services (e.g., Spotify, Apple Music) improve **user engagement**.  
 - Enables **personalized playlist generation**.  
 - Provides insights for **music marketing strategies**.  
@@ -75,47 +69,58 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 
 ---
 
-## Tech Stack  ???
+## Tech Stack
 - **Python**: Pandas, NumPy, Scikit-learn  
-- **Visualization**: Matplotlib, Seaborn, Plotly  
-- **Clustering**: K-Means, Hierarchical, DBSCAN, Mean Shift, Gaussian Mixture Models (GMM)   
-- **Dimensionality Reduction**: PCA, t-SNE(t-distributed Stochastic Neighbor Embedding), UMAP(Uniform Manifold Approximation and Projection), ICA(Independent Component Analysis)
+- **Visualization**: Matplotlib, Seaborn 
+- **Clustering**: K-Means, Hierarchical, Gaussian Mixture Models (GMM)   
+- **Dimensionality Reduction**: PCA, t-SNE(t-distributed Stochastic Neighbor Embedding)
 - **Jupyter Notebook** for analysis  
 
 ---
  
-## Repository Structure  ???
+## Repository Structure
 
 ```
 Marketing-Campaign-Analysis-with-EDA-and-Hypothesis-Testing/
-├── Data/
+├── data/
 │ ├── interim/
 │ │   ├── data_outliers_cleared.parquet
-│ │   └── df_reduced_dim.parquet
+│ │   ├── df_reduced_dim_pd.parquet
+│ │   ├── group_0_df.parquet
+│ │   └── group_1_df.parquet
 │ └── raw/
 │     ├── Data Dictionary-Creating cohorts of songs.xlsx
 │     └── rolling_stones_spotify.csv
-├── Jupyter_notebook_Scripts/
+├── jupyter_notebook_Scripts/
 │     ├── 01_Data_Inspection_Cleaning.ipynb
 │     ├── 02_Exploratory_Data Analysis_(EDA)_Feature_Engineering.ipynb
 │     ├── 03_Feature_Engineering_Dimensionality_Reduction.ipynb 
 │     └── 04_Clustering_Analysis.ipynb
-├── Output/
-│     ├── 01_.docx
-│     ├── 02_.docx
-│     ├── 03_.docx 
-│     └── 04_.docx
+├── plots/
+│     ├── t-SNE_visualizatio_song_clusters.png
+│     ├── Scatter_plot.png
+│     ├── Popularity_trend_time.png
+│     ├── Name_album_album_popularity.png
+│     ├── Histogram_Box_Plots.png
+│     ├── Heat_map_correlationship.png
+│     ├── Explained_variance_number_component.png
+│     ├── Elbow_Optimal_K.png
+│     └── Clusters_visulation_k_2_3.png
+├── output/
+│     ├── 01_Data_Inspection_Cleaning.docx
+│     ├── 02_Exploratory_Data Analysis_(EDA)_Feature_Engineering.docx
+│     ├── 03_Feature_Engineering_Dimensionality_Reduction.docx 
+│     └── 04_Clustering_Analysis.docx
 └── README.md
 
 ```
 
-
 ---
 
-## Next Steps  ????
+## Next Steps
 - Expand dataset to include more artists and genres.  
 - Test deep learning–based clustering (autoencoders).  
-- Integrate with a **recommendation system prototype**.  
+- Integrate with a **recommendation system prototype**.
 
 ---
 

@@ -81,7 +81,7 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 ## Repository Structure
 
 ```
-Marketing-Campaign-Analysis-with-EDA-and-Hypothesis-Testing/
+Personalized-Music-Recommendations-ML/
 ├── data/
 │ ├── interim/
 │ │   ├── data_outliers_cleared.parquet

@@ -83,6 +83,9 @@ Such cohorts can be used to improve **music recommendation systems**, helping st
 ```
 Personalized-Music-Recommendations-ML/
 ├── data/
+│ ├── processed/
+│ │   ├── group_0_df.parquet
+│ │   └── group_1_df.parquet
 │ ├── interim/
 │ │   ├── data_outliers_cleared.parquet
 │ │   ├── df_reduced_dim_pd.parquet
